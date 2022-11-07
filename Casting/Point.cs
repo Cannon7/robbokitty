@@ -1,6 +1,6 @@
 using System;
-namespace RoboKitten;
-{
+namespace RoboKitten.Casting;
+
     public class Point
     {
         private int _x = 0;
@@ -24,4 +24,3 @@ namespace RoboKitten;
             int Y = this._y + other.GetYV();
         }
     }
-}

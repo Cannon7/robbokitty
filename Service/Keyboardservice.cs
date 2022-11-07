@@ -2,8 +2,8 @@ using Raylib_cs;
 using System;
 
 
-namespace RoboKitten
-{
+namespace RoboKitten.Service;
+
     /// <summary>
     /// <para>Detects player input.</para>
     /// <para>
@@ -59,4 +59,3 @@ namespace RoboKitten
             return direction;
         }
     }
-}

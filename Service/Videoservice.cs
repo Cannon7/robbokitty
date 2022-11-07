@@ -2,8 +2,8 @@ using System;
 using Raylib_cs;
 
 
-namespace RoboKitten;
-{
+namespace RoboKitten.Service;
+
     /// <summary>
     /// <para>Outputs the game state.</para>
     /// <para>
@@ -167,4 +167,3 @@ namespace RoboKitten;
         }
 
     }
-}
