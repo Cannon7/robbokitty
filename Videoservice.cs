@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+using System;
 using Raylib_cs;
-using Unit04.Game.Casting;
 
 
-namespace Unit04.Game.Services
+namespace RoboKitten;
 {
     /// <summary>
     /// <para>Outputs the game state.</para>
@@ -158,7 +157,7 @@ namespace Unit04.Game.Services
         /// </summary>
         /// <param name="color">The color to convert.</param>
         /// <returns>A Raylib color.</returns>
-        private Raylib_cs.Color ToRaylibColor(Casting.Color color)
+        private Raylib_cs.Color ToRaylibColor(Color color)
         {
             int r = color.GetRed();
             int g = color.GetGreen();
