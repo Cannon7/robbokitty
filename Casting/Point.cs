@@ -21,6 +21,17 @@ namespace RoboKitten.Casting;
         public Point Addnumb(Point other)
         {
             int x = this._x + other.GetXV();
-            int Y = this._y + other.GetYV();
+            int y = this._y + other.GetYV();
+            return new Point(x, y);
+        }
+        public bool Equals(Point other)
+        {
+            return this._x == other.GetXV() && this._y == other.GetYV();
+        }
+        public Point Scale(int factor)
+        {
+            int x = this._x * factor;
+            int y = this._y * factor;
+            return new Point(x, y);
         }
     }
