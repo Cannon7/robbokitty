@@ -1,6 +1,6 @@
 using System;
 using Raylib_cs;
-
+using RoboKitten.Casting;
 
 namespace RoboKitten.Service;
 
@@ -63,8 +63,8 @@ namespace RoboKitten.Service;
         public void DrawActor(Actor actor)
         {
             string text = actor.GetText();
-            int x = actor.GetPosition().GetX();
-            int y = actor.GetPosition().GetY();
+            int x = actor.GetPosition().GetXV();
+            int y = actor.GetPosition().GetYV();
             int fontSize = actor.GetFontSize();
             Casting.Color c = actor.GetColor();
             Raylib_cs.Color color = ToRaylibColor(c);
