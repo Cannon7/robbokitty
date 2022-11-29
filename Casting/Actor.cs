@@ -4,15 +4,15 @@ public class Actor
 {
     private string _text = "";
     private int _fontSize = 15;
-    private Color _color = new Color(255, 255, 255);
+    private Colour _Colour = new Colour(255, 255, 255);
     private Point _position = new Point(0, 0);
     private Point _velocity = new Point(0, 0);
     public Actor()
     {
     }
-        public Color GetColor()
+        public Colour GetColour()
     {
-        return _color;
+        return _Colour;
     }
 
 
@@ -45,13 +45,13 @@ public class Actor
         _position = new Point(x, y);
     }
 
-    public void SetColor(Color color)
+    public void SetColour(Colour Colour)
     {
-        if (color == null)
+        if (Colour == null)
         {
-            throw new ArgumentException("color can't be null");
+            throw new ArgumentException("Colour can't be null");
         }
-        this._color = color;
+        this._Colour = Colour;
     }
 
     public void SetFontSize(int fontSize)

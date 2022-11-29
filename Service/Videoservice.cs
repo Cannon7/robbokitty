@@ -66,9 +66,9 @@ namespace RoboKitten.Service;
             int x = actor.GetPosition().GetXV();
             int y = actor.GetPosition().GetYV();
             int fontSize = actor.GetFontSize();
-            Casting.Color c = actor.GetColor();
-            Raylib_cs.Color color = ToRaylibColor(c);
-            Raylib.DrawText(text, x, y, fontSize, color);
+            Casting.Colour c = actor.GetColour();
+            Raylib_cs.Color Colour = ToRaylibColour(c);
+            Raylib.DrawText(text, x, y, fontSize, Colour);
         }
 
         /// <summary>
@@ -153,16 +153,16 @@ namespace RoboKitten.Service;
         }
 
         /// <summary>
-        /// Converts the given color to it's Raylib equivalent.
+        /// Converts the given Colour to it's Raylib equivalent.
         /// </summary>
-        /// <param name="color">The color to convert.</param>
-        /// <returns>A Raylib color.</returns>
-        private Raylib_cs.Color ToRaylibColor(Color color)
+        /// <param name="Colour">The Colour to convert.</param>
+        /// <returns>A Raylib Colour.</returns>
+        private Raylib_cs.Color ToRaylibColour(Colour Colour)
         {
-            int r = color.GetRed();
-            int g = color.GetGreen();
-            int b = color.GetBlue();
-            int a = color.GetAlpha();
+            int r = Colour.GetRed();
+            int g = Colour.GetGreen();
+            int b = Colour.GetBlue();
+            int a = Colour.GetAlpha();
             return new Raylib_cs.Color(r, g, b, a);
         }
 
