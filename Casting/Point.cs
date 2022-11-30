@@ -3,6 +3,7 @@ namespace RoboKitten.Casting;
 
     public class Point
     {
+        //GETS AND GIVES LOCATION
         private int _x = 0;
         private int _y = 0;
         public Point(int x, int y)

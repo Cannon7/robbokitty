@@ -2,6 +2,7 @@ using System;
 namespace RoboKitten.Casting;
 public class Colour
 {
+    //ASSIGNS COLORS
     private int _r = 0;
     private int _g = 0;
     private int _b = 0;

@@ -11,6 +11,7 @@ namespace RoboKitten
 {
     class Program
     {
+        // DEFINES SCREEN AND CREATES CAST
         private static int FRAME_RATE = 12;
         private static int MAX_X = 900;
         private static int MAX_Y = 600;
@@ -25,10 +26,9 @@ namespace RoboKitten
 
         static void Main(string[] args)
         {
-            // create the cast
+            // CAST, ROBOT, BANNER, ARTIFACTS
             Cast cast = new Cast();
 
-            // create the banner
             Actor banner = new Actor();
             banner.SetText("");
             banner.SetFontSize(FONT_SIZE);
@@ -36,7 +36,6 @@ namespace RoboKitten
             banner.SetPosition(new Point(CELL_SIZE, 0));
             cast.AddActor("banner", banner);
 
-            // create the robot
             Actor robot = new Actor();
             robot.SetText("#");
             robot.SetFontSize(FONT_SIZE);
@@ -44,10 +43,8 @@ namespace RoboKitten
             robot.SetPosition(new Point(MAX_X / 2, MAX_Y / 2));
             cast.AddActor("robot", robot);
 
-            // load the messages
             List<string> messages = File.ReadAllLines(DATA_PATH).ToList<string>();
 
-            // create the artifacts
             Random random = new Random();
             for (int i = 0; i < DEFAULT_ARTIFACTS; i++)
             {

@@ -2,6 +2,7 @@ using System;
 namespace RoboKitten.Casting;
 public class Actor
 {
+    //CREATES AND MANMAGES ACTORS FOR BANNER, ROBOT, AND ARTIFACT
     private string _text = "";
     private int _fontSize = 15;
     private Colour _Colour = new Colour(255, 255, 255);

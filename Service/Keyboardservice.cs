@@ -4,13 +4,7 @@ using RoboKitten.Casting;
 
 namespace RoboKitten.Service;
 
-    /// <summary>
-    /// <para>Detects player input.</para>
-    /// <para>
-    /// The responsibility of a KeyboardService is to detect player key presses and translate them 
-    /// into a point representing a direction.
-    /// </para>
-    /// </summary>
+
     public class KeyboardService
     {
         private int _cellSize = 15;

@@ -8,7 +8,7 @@ namespace RoboKitten.Casting;
         public Cast()
         {
         }
-
+        //KEEPS TRACK OF ACTORS IN LIST
         public void AddActor(string group, Actor actor)
         {
             if (!_actors.ContainsKey(group))

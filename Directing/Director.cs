@@ -9,6 +9,7 @@ namespace RoboKitten.Directing;
 
         public Director(KeyboardService keyboardService, VideoService videoService)
         {
+            //CALLS SERVICES
             this._keyboardService = keyboardService;
             this._videoService = videoService;
         }
@@ -18,6 +19,7 @@ namespace RoboKitten.Directing;
             _videoService.OpenWindow();
             while (_videoService.IsWindowOpen())
             {
+                //STARTS GAMEPLAY LOOP AND UPDATES
                 GetInputs(cast);
                 DoUpdates(cast);
                 DoOutputs(cast);
