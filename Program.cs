@@ -19,7 +19,7 @@ namespace RoboKitten
         private static int COLS = 60;
         private static int ROWS = 40;
         private static string CAPTION = "Robot Finds Kitten";
-        private static string DATA_PATH = "Data/messages.txt";
+        private static string DATA_PATH = "messages.txt";
         private static Colour WHITE = new Colour(255, 255, 255);
         private static int DEFAULT_ARTIFACTS = 40;
 
