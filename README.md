@@ -1,1 +1,1 @@
-# robbokitty
+Robot finds kitten is a game where you are in an open plane as a robit and find the kitten and other random items.
