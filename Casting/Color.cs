@@ -1,12 +1,12 @@
 using System;
 namespace RoboKitten.Casting;
-public class Color
+public class Colour
 {
     private int _r = 0;
     private int _g = 0;
     private int _b = 0;
     private int _a = 255;
-    public Color(int r, int g, int b)
+    public Colour(int r, int g, int b)
     {
         this._r = r;
         this._g = g;
